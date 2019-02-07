@@ -1,2 +1,6 @@
 subjects=["physics","chemistry","maths",123]
-print(subjects)
+n=len(subjects)
+i=0
+while i<n:
+ print(subjects[i])
+ i=i+1
