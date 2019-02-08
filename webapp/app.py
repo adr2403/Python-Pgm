@@ -1,18 +1,18 @@
-from flask import Flask
+from flask import Flask,render_template
 
 app=Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Hello"
+    return render_template("index.html")
 
 @app.route("/home") 
 def check():
-    return "Welcome to home page"   
+    return render_template("home.html")
 
 @app.route("/about")
 def about():
-    return "Page created by Adarsh Rajesh"    
+    return render_template("about.html")   
 
 @app.route("/institution")
 def institute():
@@ -20,4 +20,4 @@ def institute():
 
 
 if(__name__=="__main__"):
-    app.run()
+    app.run(debug=True)
