@@ -1,7 +1,5 @@
-def add(a,b):
-    s=(a+b)**2
-    return s
+import subtract
 a=int(input("enter value for a"))
 b=int(input("enter value for b"))
-sum=add(a,b)
+sum=add.add(a,b)
 print(sum)
