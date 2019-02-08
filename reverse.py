@@ -1,7 +1,7 @@
 n=int(input("enter the number to be reversed"))
-s=0
+rev=0
 while n>0:
-    i=int(n%10)
-    s=(s*10)+i
+    r=int(n%10)
+    rev=(rev*10)+r
     n=int(n/10)
-print(s)      
+print("reversed number is",rev)    
